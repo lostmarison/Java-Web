@@ -1,7 +1,6 @@
 # DDL -表结构-查询、修改、删除
-```sql
 |   功能    |     语法    | 
-|   :---:   |    :----:   | 
+|   ---:   |    ----:   | 
 | 查询当前数据库所有表|show tables;|
 | 查询表结构   |desc 表名;|
 | 添加字段  |alter table 表名 字段名 类型（长度）[comment 注释][约束];|
@@ -10,4 +9,3 @@
 |删除字段|alter table 表名 drop coluumn 字段名|
 |修改表名|alter table 表名 rename to 新表名|
 |删除表|drop table [if exists] 表名|
-```
