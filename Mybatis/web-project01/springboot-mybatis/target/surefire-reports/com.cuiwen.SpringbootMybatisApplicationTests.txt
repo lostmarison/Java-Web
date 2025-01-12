@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: com.cuiwen.SpringbootMybatisApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.267 s <<< FAILURE! -- in com.cuiwen.SpringbootMybatisApplicationTests
+com.cuiwen.SpringbootMybatisApplicationTests.testFindAll -- Time elapsed: 0.584 s <<< ERROR!
+org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.cuiwen.mapper.StudentMapper.findALL
+	at org.apache.ibatis.binding.MapperMethod$SqlCommand.<init>(MapperMethod.java:229)
+	at org.apache.ibatis.binding.MapperMethod.<init>(MapperMethod.java:53)
+	at org.apache.ibatis.binding.MapperProxy.lambda$cachedInvoker$0(MapperProxy.java:96)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1713)
+	at org.apache.ibatis.util.MapUtil.computeIfAbsent(MapUtil.java:36)
+	at org.apache.ibatis.binding.MapperProxy.cachedInvoker(MapperProxy.java:94)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
+	at jdk.proxy2/jdk.proxy2.$Proxy59.findALL(Unknown Source)
+	at com.cuiwen.SpringbootMybatisApplicationTests.testFindAll(SpringbootMybatisApplicationTests.java:18)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
